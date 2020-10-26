@@ -1,0 +1,105 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ระบบจองเลขทะเบียนรถผ่านอินเตอร์เน็ต</title>
+</head>
+<link rel="stylesheet" type="text/css" href="system_jb-admin.css" />
+﻿<script src="jquery/jquery.js"></script>
+
+<script type="text/javascript"> 
+/* 2020-01-14 */
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+var dtt = new Date(2020,10,26,12,29,25);
+
+setInterval(function() {
+        dtt.setSeconds(dtt.getSeconds() + 1);
+        var time = addZero(dtt.getHours()) +':' + addZero(dtt.getMinutes()) + ':' + addZero(dtt.getSeconds());
+        document.getElementById('timepress').value = time;
+}, 1000);
+/* 2020-01-14 */
+</script>
+
+
+<body oncontextmenu="return false" onselectstart="return false" onpaste="return false">
+
+<!--  -->
+
+<script language="JavaScript"> 
+<!-- 
+//Disable right mouse click Script 
+//By Maximus ( maximus@nsimail.com) w/ mods by DynamicDrive 
+//For full source code, visit http://www.dynamicdrive.com 
+
+var message="ห้าม copy"; 
+/////////////////////////////////// 
+
+function clickIE4(){ 
+if (event.button==2){ 
+alert(message); 
+return false; 
+} 
+} 
+
+function clickNS4(e){ 
+if (document.layers||document.getElementById&&!document.all){ 
+if (e.which==2||e.which==3){ 
+alert(message); 
+return false; 
+} 
+} 
+} 
+
+if (document.layers){ 
+document.captureEvents(Event.MOUSEDOWN); 
+document.onmousedown=clickNS4; 
+} 
+else if (document.all&&!document.getElementById){ 
+document.onmousedown=clickIE4; 
+} 
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script> 
+
+
+<div id="center" style="position:relative; float:left; width:100%;">
+	<div style="padding:15px; border:1px solid #F00; font-size:1em;">
+	<strong style="font-size:22px;"><center>หลักเกณฑ์การจองเลขทะเบียนรถผ่านอินเตอร์เน็ต</center></strong>
+	<ul style="list-style-type: decimal;">
+	<li><span style="color: red;"><b><u>กรณีรถใหม่</u></b> ข้อมูลรถจะต้องถูกส่งบัญชีมาให้กรมการขนส่งทางบก และท่านต้องได้รับรถยนต์แล้ว  จึงจะจองเลขทะเบียนได้<br /><b><u>กรณีรถจดทะเบียนแล้ว</u></b> จะต้องเป็นรถที่จดทะเบียนกรุงเทพมหานคร หรือได้แจ้งความประสงค์ขอย้ายรถมากรุงเทพมหานคร และสถานะรถปกติ เท่านั้น</span></li>
+	<li>ท่านสามารถใส่เลขทะเบียนที่เปิดให้จองได้ตามตารางจองเลข ได้ครั้งละ 1 เลข และสามารถใส่เลขใหม่ได้จนกว่าจะจองเลขทะเบียนได้<br /></li>
+	<li>สามารถตรวจสอบวันจดทะเบียนได้ที่ ตารางจองเลขฯ <span style="color: red;">"ปัจจุบันจดทะเบียนถึงเลข"</span> หากถึงเลขทะเบียน และกลุ่มหมวดที่ท่านจองได้แล้ว ก็สามารถจดทะเบียนได้ แต่ต้องจดทะเบียนก่อนวันที่กรมฯ กำหนด หากพ้นระยะเวลา
+	ดังกล่าว สิทธิในหมายเลขนั้นจะตกไป <br /></li>
+	<li>เมื่อจองเลขทะเบียนรถได้แล้ว จะสามารถจองเลขทะเบียนรถยนต์ได้ใหม่อีกครั้งหลังจาก 3 เดือน นับจากวันที่จองเลขทะเบียน โดยอ้างอิงจากเลขประจำตัว และรายละเอียดของรถที่จองเลขทะเบียนได้<br /></li>
+	<li>เลขทะเบียนที่จองได้ จะจดทะเบียนด้วยชื่อที่จองได้เท่านั้น ไม่สามารถยกเลิก หรือเปลี่ยนแปลงเป็นชื่อผู้อื่นได้ และรถที่นำมาจดทะเบียนจะต้องมีชื่อผู้ถือกรรมสิทธิ์ หรือผู้ครอบครอง เป็นชื่อเดียวกันกับชื่อที่จองได้<br /></li>
+	<li><span style="color: red;">ผู้ถือสัญชาติไทย  ให้ระบุเลขบัตรประจำตัวประชาชนในการจองเลขทะเบียนเท่านั้น</span><br /></li>
+	<li><span style="color: blue;"><strong>ข้อควรระวัง ชื่อ – นามสกุล เลขบัตรประจำตัวประชาชน หากอักษร หรือตัวเลข ไม่ตรงตามบัตรประจำตัวประชาชน หรือเลขทะเบียนบริษัทไม่ตรงกับเอกสารนิติบุคคล ให้ถือว่าไม่ใช้บุคคลเดียวกัน จะไม่สามารถนำเลขไปจดทะเบียนได้</strong><br /></li>
+	<li>ให้ใส่เลขบัตรประจำตัวประชาชน หรือเลขทะเบียนการค้า หรือ เลขหนังสือเดินทาง ต้องติดกัน เช่น เลขบัตรประจำตัวประชาชน 3529999227711, เลขหนังสือเดินทาง P110234 เป็นต้น<br /></li>
+	<li><span style="color: red;"><strong>หากรูปแบบการใส่ ชื่อ – นามสกุล และเลขบัตร ผิดไปจากที่กำหนด <br>หรือรายละเอียดของรถ (ยี่ห้อรถ, เลขตัวถัง) ไม่ตรงกับหลักฐานของรถ <br>หรือเบอร์โทรศัพท์ ไม่ใช่เบอร์ที่ติดต่อได้จริง ให้ตกเป็นโมฆะ</strong></span><br /></li>
+	<li>การจอง จะเปิดให้จองเป็นแบบวันต่อวัน ตั้งแต่เวลา 10.00 น. ถึง 16.00 น. ของวัน ตามตารางจองเลข<br /></li>
+	<li>กรมฯ อาจมีการเปลี่ยนแปลงข้อมูลการจองตามความเหมาะสมโดยไม่ต้องแจ้งให้ทราบล่วงหน้า<br /></li>
+	<li>หากมีข้อผิดพลาดในการจอง ไม่ว่ากรณีใดๆ เจ้าหน้าที่จะดำเนินการเปลี่ยนหมวดอักษรให้ใหม่และจะแจ้งให้ทราบ<br /></li>
+	</ul>
+	<br>
+	<strong style="font-size:16px;">กรณีมีรถมากกว่า 1 คัน และต้องการจองหมายเลขทะเบียนรถมากกว่า 1 หมายเลข ต้องนำหลักฐานมาแสดงต่อเจ้าหน้าที่เพื่อปลดล็อคให้สามารถจองหมายเลขทะเบียนรถอีกหมายเลขได้ ดังนี้</strong>
+	<ul style="list-style-type: decimal; font-size: 16px;">
+	<li>ผลการจองหมายเลขทะเบียนรถ และหลักฐานของรถคันที่ 1  (สำเนา)<br /></li>
+	<li>หลักฐานของรถคันที่ 2 และสำเนาบัตรประชาชน หรือเลขทะเบียนบริษัท (สำเนา)<br /></li>
+	<li>หากเป็นผู้ดำเนินการแทน จะต้องมีใบมอบอำนาจจากเจ้าของรถ<br /></li>
+	</ul>
+	<br>
+			<form id="f_rule" name="f_rule" method="post" action="?confirm=40">
+	<input type="hidden" name="timepress" id="timepress" value="12:29:25">
+	<center><input type="submit" value="    ยอมรับหลักเกณฑ์   "  style=" font-size:2em; height:45px;" /></center>
+	</form>
+		</div>
+	
+</div>
+</div>
+</body>
+</html>
