@@ -1,0 +1,87 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ระบบจองเลขทะเบียนรถผ่านอินเตอร์เน็ต</title>
+</head>
+<link rel="stylesheet" type="text/css" href="system_jb-admin.css" />
+﻿<script src="jquery/jquery.js"></script>
+
+<script type="text/javascript"> 
+/* 2020-01-14 */
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+var dtt = new Date(2020,10,26,12,31,6);
+
+setInterval(function() {
+        dtt.setSeconds(dtt.getSeconds() + 1);
+        var time = addZero(dtt.getHours()) +':' + addZero(dtt.getMinutes()) + ':' + addZero(dtt.getSeconds());
+        document.getElementById('timepress').value = time;
+}, 1000);
+/* 2020-01-14 */
+</script>
+
+
+<body oncontextmenu="return false" onselectstart="return false" onpaste="return false">
+
+<!--  -->
+
+<script language="JavaScript"> 
+<!-- 
+//Disable right mouse click Script 
+//By Maximus ( maximus@nsimail.com) w/ mods by DynamicDrive 
+//For full source code, visit http://www.dynamicdrive.com 
+
+var message="ห้าม copy"; 
+/////////////////////////////////// 
+
+function clickIE4(){ 
+if (event.button==2){ 
+alert(message); 
+return false; 
+} 
+} 
+
+function clickNS4(e){ 
+if (document.layers||document.getElementById&&!document.all){ 
+if (e.which==2||e.which==3){ 
+alert(message); 
+return false; 
+} 
+} 
+} 
+
+if (document.layers){ 
+document.captureEvents(Event.MOUSEDOWN); 
+document.onmousedown=clickNS4; 
+} 
+else if (document.all&&!document.getElementById){ 
+document.onmousedown=clickIE4; 
+} 
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script> 
+
+
+<div id="center" style="position:relative; float:left; width:100%;">
+<div style="padding:15px; border:1px solid #F00;">
+<center>
+<strong style=" color:#0000FF; font-size:1.5em;">ประจำวันที่ 26 ต.ค. 2563</strong><br>
+<center>เวลา <strong><font color='blue'>10:00:00 - 16:00:00</font></strong> น.</center><center>ขณะนี้เหลือเวลาจองเลขทะเบียน <font color='blue'>3</font> ชั่วโมง / <font color='blue'>28</font> นาที<br><Br></center><br>
+<span style="font-size:1.5em;">หมวด&nbsp;1ขต 10-8500</span><br>        <input type="button" onClick="window.location='?confirm=40&car_type=1'" value="    รถกระบะ 4 ประตู / รถเก๋ง   " style=" font-size:2em; width:70%; height:60px;" />
+        <br /><br /><br /><br />
+	<span style="font-size:1.5em;">หมวด&nbsp;1นข 3701-3750</span><br>        <input type="button" onClick="window.location='?confirm=40&car_type=2'" value="    รถตู้   " style=" font-size:2em; width:70%; height:60px;" />
+        <br /><br /><br /><br />
+	<span style="font-size:1.5em;">หมวด&nbsp;3ฒค 9001-9500</span><br>        <input type="button" onClick="window.location='?confirm=40&car_type=3'" value="    รถกระบะ   " style=" font-size:2em; width:70%; height:60px;" />
+        <br /><br /><br /><br />
+	</center>
+</div>
+
+</div>
+</div>
+</body>
+</html>
